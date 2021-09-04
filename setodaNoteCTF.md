@@ -17,7 +17,7 @@ URL: [https://ctf.setodanote.net/](https://ctf.setodanote.net/)
 
 ## OSINT
 
-### Dorks ( TD solves / 50 points )
+### Dorks ( 362 solves / 50 points )
 
 Google 検索コマンドを調べると以下のサイトが出てきました．
 
@@ -29,7 +29,7 @@ Google 検索コマンドを調べると以下のサイトが出てきました�
 flag{inurl:login.php}
 ```
 
-### N-th_prime ( TD solves / 200 points ) \[FirstAC\]
+### N-th_prime ( 41 solves / 200 points ) \[FirstAC\]
 
 これ結構難しいです．まずは`72057594037927936=2^56`であることがわかります．素数カウント関数の結果を表示している[サイト](http://www.primefan.ru/stuff/primes/table.html)ではフラグの先頭 4 文字は`1991`と書かれています．その時，脳裏に OEIS を思い出し，OEIS で数列として検索すると[出てきます](https://oeis.org/A033844/b033844.txt)．`56 2991614170035124397`
 と書かれているので
@@ -40,7 +40,7 @@ flag{2991614170035124397}
 
 ## Crypto
 
-### vul_rsa_01 ( TD solves / 150 points )
+### vul_rsa_01 ( 170 solves / 150 points )
 
 ```txt
 c: 39119617768257067256541748412833564043113729163757164299687579984124653789492591457335
@@ -81,7 +81,7 @@ print(long_to_bytes(ans))
 flag{weak_rsa_can_be_decrypted!}
 ```
 
-### vul_rsa_02 ( TD solves / 250 points )
+### vul_rsa_02 ( 139 solves / 250 points )
 
 ```txt
 c: 227982950403746746755552239763357058548502617805036635512868420433061892121830106966643649614593055827188324989309580260616202575703840597661315505385258421941843741681
@@ -179,7 +179,7 @@ flag{197_Michael_J_Wiener_673}
 
 ## Forensics
 
-### tkys_another_day ( TD solves / 100 points )
+### tkys_another_day ( 126 solves / 100 points )
 
 チームメンバー「この問題さっきから解析してるんだけど全然わからねえ」  
 僕「ちょっとファイル開いてみるわ」  
@@ -189,7 +189,7 @@ Mac で開きます．フラグ載ってました．以上(笑)．作問者さ�
 
 ![flag](images/setodaNoteCTF_tkys_another_day.png)
 
-### CSIRT_asks_you_01 ( TD solves / 150 points )
+### CSIRT_asks_you_01 ( 99 solves / 150 points )
 
 Security.evtx というよくわからないファイルが配られましたが，チームメンバーが CSV に変換してくれました．
 すると下記のような情報が入ったファイルが開けます．
@@ -236,11 +236,11 @@ flag{2021/07/18_20:09:21_4625}
 
 ## Programming
 
-### ZZZIPPP ( TD solves / 80 points )
+### ZZZIPPP ( 263 solves / 80 points )
 
 Python の zipfile モジュールを使うと簡単に解凍できます．フラグは忘れました．
 
-### EZZZIPPP ( TD solves / 150 points )
+### EZZZIPPP ( 180 solves / 150 points )
 
 Python の zipfile モジュールを使うと簡単に解凍できます．パスワードがあっても以下の関数で解凍できます．フラグは忘れました．
 
