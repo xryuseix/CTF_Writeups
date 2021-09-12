@@ -2,6 +2,8 @@
 
 # TsukuCTF 2021 Writer & Tester Writeup
 
+## [公式Writeupはこちら](https://fans.sechack365.com/ctf/tsukuctf2021/)
+
 ## Welcome
 
 > TsukuCTF 2021にご参加いただきありがとうございます。フラグの形式は全て`TsukuCTF{}`です。この問題のフラグは[Twitter](https://twitter.com/tsukuctf)のアカウント名です。質問などはTwitterのDMにお願い致します。
