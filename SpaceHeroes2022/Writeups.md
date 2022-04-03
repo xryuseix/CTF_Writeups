@@ -153,6 +153,35 @@ File Modification Date/Time     : 2022:04:03 05:15:21+09:00
 
 `shctf{falcon_heavy_Arabsat-6A}`
 
+## Curious?
+
+Google Lensを使用すると[NASAのサイト](https://nasa-jpl.github.io/SPOC/)が出てきます．
+
+![nasa](https://nasa-jpl.github.io/SPOC/assets/images/sidebyside.png)
+
+しかし，このサイトからフラグの情報が得られません．私はかなり多くのサイトから画像を検索しましたが，類似画像は見つからなかったので，動画から検索することにしました．
+
+Youtubeで「mars curiosity SOL dune」と検索すると[それらしき動画](https://www.youtube.com/watch?v=ggP5dnvZFlo)がありました．
+
+この動画の引用元が下記のサイトです(こちらの方が見やすい)．
+
+https://www.360cities.net/image/mars-panorama-curiosity-solar-day-530
+
+![mars](./img/mars.png)
+
+赤枠の箇所が問題の写真と一致しているように見えます．答えは`shctf{SOL_530}`だと思い，提出しましたがincorrectでした．
+SOLの１単位は(わかりませんが)あまり長い距離ではありません．
+
+これがSOL530
+![mars530-2](./img/mars530-2.png)
+
+これがSOL534
+![SOL534](https://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00534/opgs/edr/fcam/FLB_444897169EDR_F0260292FHAZ00323M_.JPG)
+
+このように，あまり移動していないことがわかります．そこで，私は`SOL_527`から順に入力しました．答えは533でした．
+
+`shctf{SOL_533}`
+
 ## Programming
 
 ### FRK War
@@ -241,35 +270,6 @@ while True:
 `Congrats, the war is over: shctf{F3Ar-1s-t4E-true-eN3my.-Th3-0nly-en3my}`
 
 `shctf{F3Ar-1s-t4E-true-eN3my.-Th3-0nly-en3my}`
-
-## Curious?
-
-Google Lensを使用すると[NASAのサイト](https://nasa-jpl.github.io/SPOC/)が出てきます．
-
-![nasa](https://nasa-jpl.github.io/SPOC/assets/images/sidebyside.png)
-
-しかし，このサイトからフラグの情報が得られません．私はかなり多くのサイトから画像を検索しましたが，類似画像は見つからなかったので，動画から検索することにしました．
-
-Youtubeで「mars curiosity SOL dune」と検索すると[それらしき動画](https://www.youtube.com/watch?v=ggP5dnvZFlo)がありました．
-
-この動画の引用元が下記のサイトです(こちらの方が見やすい)．
-
-https://www.360cities.net/image/mars-panorama-curiosity-solar-day-530
-
-![mars](./img/mars.png)
-
-赤枠の箇所が問題の写真と一致しているように見えます．答えは`shctf{SOL_530}`だと思い，提出しましたがincorrectでした．
-SOLの１単位は(わかりませんが)あまり長い距離ではありません．
-
-これがSOL530
-![mars530-2](./img/mars530-2.png)
-
-これがSOL534
-![SOL534](https://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/00534/opgs/edr/fcam/FLB_444897169EDR_F0260292FHAZ00323M_.JPG)
-
-このように，あまり移動していないことがわかります．そこで，私は`SOL_527`から順に入力しました．答えは533でした．
-
-`shctf{SOL_533}`
 
 ## Crypto
 
@@ -393,7 +393,7 @@ Google で「of choice there is no creativity」と検索します．
 
 ### Space Captain Garfield
 
-がぞうごGoogle Colabで検索するとこのようなサイトが出てきます．
+画像をGoogle Lensで検索するとこのようなサイトが出てきます．
 
 https://king-harkinian.fandom.com/wiki/Garfield?file=Trekfield.jpg
 
