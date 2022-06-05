@@ -134,7 +134,7 @@ LaTeXをPDFに変換するサービスである。
 
 ![textex-1](./textex-1.png)
 
-LaTeXをPDFに変換する際には注視しなければいけないと[PayloadAllTheThingsさん](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection)が以前言っていたのを思い出し、ここを見た。
+LaTeXをPDFに変換する際には注意しなければいけないと[PayloadAllTheThingsさん](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection)が以前言っていたのを思い出し、ここを見た。
 
 フラグのようなテキストファイルをコンパイル時に読み込むには`\input{/etc/passwd}`コマンドを使用すると良いらしい。
 
