@@ -4,7 +4,17 @@ tarutaruで参加して114位でした。
 
 ![team](./team.png)
 
-## web
+* [Web Util](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#web-util)
+* [gallery](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#gallery)
+* [textex](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#textex)
+* [phisher](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#phisher)
+* [H2](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#h2)
+* [hitchhike4b](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#hitchhike4b)
+* [Quiz](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#quiz)
+* [CoughingFox](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#coughingfox)
+* [Command](https://github.com/xryuseix/CTF_Writeups/tree/master/ctf4b2022#command)
+
+## 
 
 ### Web Util
 
