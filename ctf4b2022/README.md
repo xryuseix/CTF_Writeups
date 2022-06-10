@@ -24,17 +24,17 @@ IPアドレスを入力すると、そのアドレスに対してpingを投げ�
 commnd := "ping -c 1 -W 1 " + param.Address + " 1>&2"
 ```
 
-`param.Address`は好きに決定できるので、例えば`param.Address`に`127.0.0.1;ls`と入力すれば`commnd := "ping -c 1 -W 1 127.0.0.1;ls 1>&2"`となってOSコマンドインジェクションが成立する。しかし、実際に`127.0.0.1;ls`を入力すると`Invalid IP address`と出力されてしまいます。
+`param.Address`は好きに決定できるので、例えば`param.Address`に`127.0.0.1;ls`と入力すれば`commnd := "ping -c 1 -W 1 127.0.0.1;ls 1>&2"`となってOSコマンドインジェクションが成立する。しかし、実際に`127.0.0.1;ls`を入力すると`Invalid IP address`と出力されてしまう。
 
 ![WebUtil-1](WebUtil-1.png)
 
-しかし、フロントエンドのソースコードを以下のような記述があります。
+しかし、フロントエンドのソースコードを以下のような記述がある。
 
 ```js
 if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(address))
 ```
 
-つまり、IPアドレスのvalidationはフロントエンドで実行されていました。よってえ、curlで直接実行してみます。
+つまり、IPアドレスのvalidationはフロントエンドで実行されていました。よって、curlで直接実行してみる。
 
 `curl -X POST https://util.quals.beginners.seccon.jp/util/ping -H 'Content-Type: application/json' --data-raw '{"address":"127.0.0.1;ls /"}'`
 
@@ -134,7 +134,7 @@ LaTeXをPDFに変換するサービスである。
 
 ![textex-1](./textex-1.png)
 
-LaTeXをPDFに変換する際には注視しなければいけないと[PayloadAllTheThingsさん](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection)が以前言っていたのを思い出し、ここを見た。
+LaTeXをPDFに変換する際には注意しなければいけないと[PayloadAllTheThingsさん](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/LaTeX%20Injection)が以前言っていたのを思い出し、ここを見た。
 
 フラグのようなテキストファイルをコンパイル時に読み込むには`\input{/etc/passwd}`コマンドを使用すると良いらしい。
 
@@ -462,7 +462,7 @@ FILE
 
 ### Quiz
 
-IDAで中を見ると、フラグが普通に載っています。
+IDAで中を見ると、フラグが普通に載っている。
 
 ![quiz-1](./quiz-1.png)
 
