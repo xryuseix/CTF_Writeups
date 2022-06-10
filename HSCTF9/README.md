@@ -2,10 +2,10 @@
 
 ## Others
 
-algorithms/travelling-salesman ... 右に行って帰ってくるだけ
-algorithms/vending-machine ... DP(大きめの鞄を用意して、ナップサック問題として帰着)
-algorithms/hacking ... 強連結成分分解
-algorithms/hacking-part-2 ... 最小全域木
+* algorithms/travelling-salesman ... 右に行って帰ってくるだけ
+* algorithms/vending-machine ... DP(大きめの鞄を用意して、ナップサック問題として帰着)
+* algorithms/hacking ... 強連結成分分解
+* algorithms/hacking-part-2 ... 最小全域木
 
 ## Tunnels
 
