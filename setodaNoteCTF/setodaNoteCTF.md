@@ -29,7 +29,7 @@ Google 検索コマンドを調べると以下のサイトが出てきました�
 flag{inurl:login.php}
 ```
 
-### N-th_prime ( 41 solves / 200 points ) \[FirstAC\]
+### N-th_prime ( 41 solves / 200 points ) [FirstAC]
 
 これ結構難しいです．まずは`72057594037927936=2^56`であることがわかります．素数カウント関数の結果を表示している[サイト](http://www.primefan.ru/stuff/primes/table.html)ではフラグの先頭 4 文字は`1991`と書かれています．その時，脳裏に OEIS を思い出し，OEIS で数列として検索すると[出てきます](https://oeis.org/A033844/b033844.txt)．`56 2991614170035124397`
 と書かれているので
