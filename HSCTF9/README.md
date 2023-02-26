@@ -1,6 +1,15 @@
-# Tunnels
+# HSCTF 9
 
-問題はようやくすると以下のようになります。
+## Others
+
+* algorithms/travelling-salesman ... 右に行って帰ってくるだけ
+* algorithms/vending-machine ... DP(大きめの鞄を用意して、ナップサック問題として帰着)
+* algorithms/hacking ... 強連結成分分解
+* algorithms/hacking-part-2 ... 最小全域木
+
+## Tunnels
+
+問題は要約すると以下のようになります。
 
 > * 200回以下のゲームを行い、187回以上成功するとフラグが得られます
 > * 家が8個あり、最初`b40m1k3`くんはどこかの家の中にいます。
